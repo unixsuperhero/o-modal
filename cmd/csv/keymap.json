@@ -1,0 +1,52 @@
+{
+  "counting": ["normal"],
+  "layers": {
+    "cell": [
+      {"mode": "normal", "keys": "h",     "do": {"op": "cursor.move", "args": {"dir": "left"}}},
+      {"mode": "normal", "keys": "left",  "do": {"op": "cursor.move", "args": {"dir": "left"}}},
+      {"mode": "normal", "keys": "l",     "do": {"op": "cursor.move", "args": {"dir": "right"}}},
+      {"mode": "normal", "keys": "right", "do": {"op": "cursor.move", "args": {"dir": "right"}}},
+      {"mode": "normal", "keys": "j",     "do": {"op": "cursor.move", "args": {"dir": "down"}}},
+      {"mode": "normal", "keys": "down",  "do": {"op": "cursor.move", "args": {"dir": "down"}}},
+      {"mode": "normal", "keys": "k",     "do": {"op": "cursor.move", "args": {"dir": "up"}}},
+      {"mode": "normal", "keys": "up",    "do": {"op": "cursor.move", "args": {"dir": "up"}}},
+      {"mode": "normal", "keys": "0",     "do": {"op": "cursor.move", "args": {"dir": "row-start"}}},
+      {"mode": "normal", "keys": "$",     "do": {"op": "cursor.move", "args": {"dir": "row-end"}}},
+      {"mode": "normal", "keys": "i",     "do": {"op": "cell.edit"}},
+      {"mode": "normal", "keys": "enter", "do": {"op": "cell.edit"}},
+      {"mode": "normal", "keys": "x",     "do": {"op": "cell.clear"}},
+      {"mode": "normal", "keys": "y",     "do": {"op": "cell.yank"}},
+      {"mode": "normal", "keys": "p",     "do": {"op": "cell.paste"}},
+      {"mode": "normal", "keys": "t u",   "do": {"op": "cell.transform", "args": {"name": "upper"}}},
+      {"mode": "normal", "keys": "t l",   "do": {"op": "cell.transform", "args": {"name": "lower"}}},
+      {"mode": "normal", "keys": "t t",   "do": {"op": "cell.transform", "args": {"name": "trim"}}},
+
+      {"mode": "insert", "class": "text",      "do": {"op": "edit.insert"}},
+      {"mode": "insert", "keys": "backspace",  "do": {"op": "edit.backspace"}},
+      {"mode": "insert", "keys": "enter",      "do": {"op": "edit.commit"}},
+      {"mode": "insert", "keys": "esc",        "do": {"op": "edit.cancel"}}
+    ],
+    "row": [
+      {"mode": "normal", "keys": "d d", "when": "many-rows", "do": {"op": "row.delete"}},
+      {"mode": "normal", "keys": "y y", "do": {"op": "row.duplicate"}},
+      {"mode": "normal", "keys": "o",   "do": {"op": "row.insertBelow"}}
+    ],
+    "sheet": [
+      {"mode": "normal", "keys": "g g",    "do": {"op": "cursor.line", "args": {"to": "top"}}},
+      {"mode": "normal", "keys": "G",      "do": {"op": "cursor.line", "args": {"to": "bottom"}}},
+      {"mode": "normal", "keys": "u",      "do": {"op": "sheet.undo"}},
+      {"mode": "normal", "keys": "ctrl+r", "do": {"op": "sheet.redo"}},
+      {"mode": "normal", "keys": "ctrl+s", "do": {"op": "sheet.save"}},
+      {"mode": "normal", "keys": "q",      "do": {"op": "modal.record"}},
+      {"mode": "normal", "keys": "@",      "do": {"op": "modal.replay"}},
+
+      {"mode": "confirm", "keys": "y",   "do": {"op": "confirm.yes"}},
+      {"mode": "confirm", "keys": "n",   "do": {"op": "confirm.no"}},
+      {"mode": "confirm", "keys": "esc", "do": {"op": "confirm.no"}}
+    ],
+    "app": [
+      {"mode": "*",      "keys": "ctrl+c", "capture": true, "do": {"op": "app.quit"}},
+      {"mode": "normal", "keys": "ctrl+e", "do": {"op": "app.preview"}}
+    ]
+  }
+}
