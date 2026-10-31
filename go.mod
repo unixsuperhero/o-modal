@@ -1,4 +1,4 @@
-module github.com/unixsuperhero/o-modal
+module ofam.dev/o-modal
 
 go 1.26.0
 

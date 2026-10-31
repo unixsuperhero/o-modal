@@ -7,7 +7,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/unixsuperhero/o-modal/modal"
+	"ofam.dev/o-modal/modal"
 )
 
 func newTestApp(t *testing.T) *App {

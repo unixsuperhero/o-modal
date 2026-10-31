@@ -6,7 +6,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/unixsuperhero/o-modal/modal"
+	"ofam.dev/o-modal/modal"
 )
 
 // Sheet is the application: a CSV grid and its cursor. It knows nothing

@@ -7,7 +7,7 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/unixsuperhero/o-modal/modal"
+	"ofam.dev/o-modal/modal"
 )
 
 //go:embed keymap.json
