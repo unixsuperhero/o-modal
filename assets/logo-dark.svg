@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 439 112" width="439" height="112" role="img" aria-label="o-modal">
-<title>o-modal</title>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 469 112" width="469" height="112" role="img" aria-label="o-modes">
+<title>o-modes</title>
 <g transform="translate(2 12)"><rect x="4" y="16" width="44" height="48" rx="10" fill="#ffd2b3"></rect><rect x="8" y="18" width="36" height="38" rx="8" fill="#fff1e6"></rect><path d="M20 26V48M34 28L22 38L34 48" fill="none" stroke="#2a170c" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M54 40H60" fill="none" stroke="#b07a58" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path><rect x="64" y="18" width="20" height="8" rx="4" fill="#ffa36b"></rect><rect x="64" y="36" width="20" height="8" rx="4" fill="#ffa36b"></rect><rect x="64" y="54" width="20" height="8" rx="4" fill="#ffa36b"></rect></g>
-<path d="M132 44a20 20 0 1 0 0.01 0M167 64h16M198 44V84M198 57a13 13 0 0 1 26 0V84M224 57a13 13 0 0 1 26 0V84M285 44a20 20 0 1 0 0.01 0M340 44a20 20 0 1 0 0.01 0M360 18V84M395 44a20 20 0 1 0 0.01 0M415 44V84M430 18V84" fill="none" stroke="#fff3ea" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"></path>
+<path d="M132 44a20 20 0 1 0 0.01 0M167 64h16M198 44V84M198 57a13 13 0 0 1 26 0V84M224 57a13 13 0 0 1 26 0V84M285 44a20 20 0 1 0 0.01 0M340 44a20 20 0 1 0 0.01 0M360 18V84M375 64H415A20 20 0 1 0 409.1 78.1M459 50C456 45 451 44 445 44C437 44 431 48 431 54C431 61 438 63 445 64C452 65 460 67 460 74C460 80 453 84 445 84C438 84 432 82 430 77" fill="none" stroke="#fff3ea" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"></path>
 </svg>
