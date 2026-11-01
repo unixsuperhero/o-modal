@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 439 112" width="439" height="112" role="img" aria-label="o-modal">
+<title>o-modal</title>
+<g transform="translate(2 12)"><rect x="4" y="16" width="44" height="48" rx="10" fill="#f3b38a"></rect><rect x="8" y="18" width="36" height="38" rx="8" fill="#fff1e6" stroke="#2a170c" stroke-width="3"></rect><path d="M20 26V48M34 28L22 38L34 48" fill="none" stroke="#2a170c" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M54 40H60" fill="none" stroke="#b07a58" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></path><rect x="64" y="18" width="20" height="8" rx="4" fill="#e07f45"></rect><rect x="64" y="36" width="20" height="8" rx="4" fill="#e07f45"></rect><rect x="64" y="54" width="20" height="8" rx="4" fill="#e07f45"></rect></g>
+<path d="M132 44a20 20 0 1 0 0.01 0M167 64h16M198 44V84M198 57a13 13 0 0 1 26 0V84M224 57a13 13 0 0 1 26 0V84M285 44a20 20 0 1 0 0.01 0M340 44a20 20 0 1 0 0.01 0M360 18V84M395 44a20 20 0 1 0 0.01 0M415 44V84M430 18V84" fill="none" stroke="#2a170c" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"></path>
+</svg>

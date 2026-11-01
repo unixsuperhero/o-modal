@@ -1,6 +1,27 @@
-# o-modal
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/logo-dark.svg">
+    <img alt="o-modal" src="assets/logo-light.svg" width="360">
+  </picture>
+  <br>
+  <a href="https://github.com/ofamtools/o-modal/tags"><img alt="Latest tag" src="https://img.shields.io/github/v/tag/ofamtools/o-modal"></a>
+  <a href="https://pkg.go.dev/ofam.dev/o-modal"><img alt="Go Reference" src="https://pkg.go.dev/badge/ofam.dev/o-modal.svg"></a>
+  <a href="go.mod"><img alt="Go version" src="https://img.shields.io/github/go-mod/go-version/ofamtools/o-modal"></a>
+</p>
 
-A proof of concept: a modal key engine that runs nothing. A key goes in with the current state and a snapshot of the host's environment; a new state and a list of steps come out. The host decides whether, when and how to run each step.
+<p align="center">A proof of concept: a modal key engine for Go. Keys in, steps out; the host decides what runs.</p>
+
+The engine runs nothing. A key goes in with the current state and a snapshot of the host's environment; a new state and a list of steps come out. The host decides whether, when and how to run each step.
+
+## Install
+
+The engine is the `modal` package (standard library only); add it with the Go version in [go.mod](go.mod) or newer:
+
+```sh
+go get ofam.dev/o-modal/modal@latest
+```
+
+## Usage
 
 ```go
 res := keymap.Feed(state, env, key) // pure: same inputs, same Result
@@ -9,6 +30,8 @@ for _, step := range res.Steps {
     run(step) // the host's choice
 }
 ```
+
+`Machine` wraps that loop for a host that runs steps itself. `cmd/csv` is a whole host built on it: see [Run it](#run-it).
 
 ## Layout
 
@@ -49,6 +72,8 @@ go run ./cmd/csv --explain "j 2 d d y ctrl+s" cmd/csv/testdata/people.csv  # run
 - **`App.Simulate(keys)`** forks the app (`Sheet.Fork`: rows, undo stacks, the parked request) and drives the copy with a second `Machine`, so every step really runs, on the copy. Replays and confirms come out exactly as they would for real. Effects outside the sheet are only described: the fork has `DryRun` set, so `ctrl+s` reports "would save …".
 
 `--explain` and the TUI's preview (`ctrl+e`) use the simulation: the preview shows the copy's table, the steps that ran on it, and its mode.
+
+## Tests
 
 ```sh
 go test ./...
