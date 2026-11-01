@@ -7,7 +7,7 @@ import (
 	"sort"
 	"strings"
 
-	"ofam.dev/o-modal/modal"
+	"ofam.dev/o-modes/modal"
 )
 
 //go:embed keymap.json

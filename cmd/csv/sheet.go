@@ -6,7 +6,7 @@ import (
 	"os"
 	"strings"
 
-	"ofam.dev/o-modal/modal"
+	"ofam.dev/o-modes/modal"
 )
 
 // Sheet is the application: a CSV grid and its cursor. It knows nothing

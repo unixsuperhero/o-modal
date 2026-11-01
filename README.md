@@ -1,12 +1,12 @@
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="assets/logo-animated-dark.svg">
-    <img alt="o-modal" src="assets/logo-animated-light.svg" width="360">
+    <img alt="o-modes" src="assets/logo-animated-light.svg" width="360">
   </picture>
   <br>
-  <a href="https://github.com/ofamtools/o-modal/tags"><img alt="Latest tag" src="https://img.shields.io/github/v/tag/ofamtools/o-modal"></a>
-  <a href="https://pkg.go.dev/ofam.dev/o-modal"><img alt="Go Reference" src="https://pkg.go.dev/badge/ofam.dev/o-modal.svg"></a>
-  <a href="go.mod"><img alt="Go version" src="https://img.shields.io/github/go-mod/go-version/ofamtools/o-modal"></a>
+  <a href="https://github.com/ofamtools/o-modes/tags"><img alt="Latest tag" src="https://img.shields.io/github/v/tag/ofamtools/o-modes"></a>
+  <a href="https://pkg.go.dev/ofam.dev/o-modes"><img alt="Go Reference" src="https://pkg.go.dev/badge/ofam.dev/o-modes.svg"></a>
+  <a href="go.mod"><img alt="Go version" src="https://img.shields.io/github/go-mod/go-version/ofamtools/o-modes"></a>
 </p>
 
 <p align="center">A proof of concept: a modal key engine for Go. Keys in, steps out; the host decides what runs.</p>
@@ -18,7 +18,7 @@ The engine runs nothing. A key goes in with the current state and a snapshot of 
 The engine is the `modal` package (standard library only); add it with the Go version in [go.mod](go.mod) or newer:
 
 ```sh
-go get ofam.dev/o-modal/modal@latest
+go get ofam.dev/o-modes/modal@latest
 ```
 
 ## Usage

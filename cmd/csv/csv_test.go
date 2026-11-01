@@ -7,7 +7,7 @@ import (
 	"strings"
 	"testing"
 
-	"ofam.dev/o-modal/modal"
+	"ofam.dev/o-modes/modal"
 )
 
 func newTestApp(t *testing.T) *App {

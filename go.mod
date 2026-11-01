@@ -1,4 +1,4 @@
-module ofam.dev/o-modal
+module ofam.dev/o-modes
 
 go 1.26.0
 
